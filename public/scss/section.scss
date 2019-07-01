@@ -17,27 +17,43 @@
 	height: 25rem;
 }
 
-.article p,
-.links a{
-	display: block;
+.about p,
+.links p{
+	display: inline-block;
 	padding: 0.5rem 2rem;
 	font-size: 2rem;
 	line-height: 2rem;
 }
 
-.article hr{
+.about hr{
 	margin: 2rem;
 }
 
-.article .name{
-	display: block;
-	padding: 1rem 2rem;
+.about .name{
+	width: 100%;
+	padding: 2rem 2rem;
 	font-size: 2.5rem;
 }
 
+.about .career{
+	padding: 2rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.about .career .icon{
+	font-size: 1rem;
+	color: $active-color;
+}
+
 .links {
-	padding: 5rem 1rem;
+	padding: 5rem 1rem 5rem 0.2rem;
 	border-left: 1px solid black;
+}
+
+.links .icon{
+	display: inline;
+	margin: 1rem;
 }
 
 .links a{
