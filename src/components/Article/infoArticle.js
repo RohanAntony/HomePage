@@ -11,7 +11,7 @@ function InfoArticle(props){
 				<hr/>
 				<p>A little bit of that, a little bit of this and somehow everything. </p>
 				<p>Interested in web development, mainly full stack development with React and Django. </p>
-				<p>Worked on projects based of MEAN (Mongo Express Angular NodeJS). Need some refreshment on subject before getting started.</p>
+				<p>Worked on projects based of MEAN (Mongo, Express, Angular and NodeJS). Need some refreshment on subject before getting started.</p>
 				<p>Also interested in Machine Learning especially supervised machine learning.</p>
 			</div>
 			<div class="links">

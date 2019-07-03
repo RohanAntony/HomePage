@@ -1,0 +1,45 @@
+.collapsible {
+	padding: 1rem 2rem;
+}
+
+.collapsible .heading{
+	font-size: 2.2rem;
+	line-height: 2.5rem;
+	align: center;
+	display: flex;
+	width: 100%;
+}
+
+.collapsible span:first-child{
+	flex: 1;
+}
+
+.heading .hidden{
+	display:none;
+}
+
+.heading .icon{
+	color: black;
+	margin-right: 1rem;
+}
+
+.heading .icon:hover{
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.content{
+	box-sizing: border-box;
+	transition: all 2s;
+}
+
+.content-hidden{
+	max-height: 0;
+	padding-top: 0.5rem;
+	overflow: hidden;
+}
+
+.content-visible{
+	max-height: 50vh;
+	padding-top: 1rem;
+	overflow-y: auto;
+}
