@@ -4,7 +4,7 @@ import React from 'react';
 function InfoArticle(props){
 	return (
 		<article class="article info">
-			<img src="https://avatars3.githubusercontent.com/u/5779016?s=460&v=4" alt="Profile"/>
+			<img src="img/profile.jpg" alt="Profile"/>
 			<div class="about">
 				<p class="name">Rohan Antony</p>
 				<span class="career"><i class="fas fa-circle icon"></i> &nbsp;Actively looking for oppurtunities</span>
