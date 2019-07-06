@@ -1,0 +1,57 @@
+@use './_variables' as *;
+
+.experience{
+	font-size: 2rem;
+	display: flex;
+	margin: 1rem 0.8rem 1rem 0;
+}
+
+.experience .company{
+	padding: 1rem 1rem 1rem 0;
+	width: auto;
+}
+
+.experience .company img{
+	height: 10rem;
+	border-radius: 1rem;
+}
+
+.experience .company .name{
+	display: block;
+	width: 100%;
+	margin-top: 1rem;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	text-align:center;
+}
+
+.experience .content{
+	padding: 1rem;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	flex: 1;
+}
+
+.experience .content .heading{
+	padding: 0.5rem 0;
+	border-bottom: 1px solid black;
+}
+
+.experience .content .designation{
+	display: inline-block;
+}
+
+.experience .content .duration{
+	display: inline-block;
+	padding-left: 1rem;
+	font-size: 1.7rem;
+	font-style: italic;
+}
+
+.experience .content .details{
+	padding: 0.5rem 0;
+}
+
+.experience .content .detail{
+	padding: .3rem;
+}

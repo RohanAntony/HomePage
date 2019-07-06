@@ -5,7 +5,7 @@ class collapsibleArticle extends Component{
 	constructor(props){
 		super(props)
 		this.state = {
-			display: false
+			display: true
 		}
 	}
 
