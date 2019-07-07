@@ -18,4 +18,5 @@ body{
   background-image: $background-gradient;
   display: flex;
   flex-direction: column;
+	overflow-y: scroll;
 }

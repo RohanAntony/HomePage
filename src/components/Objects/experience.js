@@ -5,10 +5,9 @@ function experience(props){
 	let details = []
 
 	if(props.details){
-		console.log(props.details)
 		details = props.details.split('.')
-		console.log(details)
-		details = details.map(d => <p class="detail">{d}</p>)
+		details.pop()
+		details = details.map(d => <p class="detail">{d}.</p>)
 	}
 
 	return(
