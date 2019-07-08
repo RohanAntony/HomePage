@@ -12,11 +12,13 @@ function section(props){
 				<Experience
 					company_image=""
 					company_name=""
-					designation="Learning enthusiast, exploring technologies"
+					designation="Learning enthusiast, exploring technologies, initiating projects"
 					from="Mar 2019"
 					to="Present"
 					details="
-						Working on projects related to django.
+						Was involved in understanding what seperates django from express and also how the django rest framework works.
+						Learnt and implemented multiple projects on React just like this Website which is written on top of react.
+						Implemented a calendar module on react which when completed can be used to set reminders and plan holidays.
 					"/>
 
 				<Experience
