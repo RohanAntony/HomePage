@@ -46,6 +46,15 @@ function section(props){
 					details="Worked on understanding the basics of commvault application as well as how it works internally. Was introduced to the reports sections and worked on few minor projects."
 					/>
 
+				<Experience
+					company_image="img/cantern.png"
+					company_name="Cantern"
+					designation="Developer"
+					from="Jan 2017"
+					to="Mar 2017"
+					details="Automated non technical workflows with automation scripts written on top of Google Sheets API. Scripts were to perform operations which were not possible on EXCEL but required a procedural language like Javascript/C. Related to extraction of student data from assessments and performed computations which were used to generate automatic reports for colleges."
+					/>
+
 			</CollapsibleArticle>
 		</section>
 	)
