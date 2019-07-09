@@ -1,0 +1,45 @@
+@use './_variables' as *;
+
+.project{
+	font-size: 2rem;
+	margin: 1rem 0.8rem 1rem 0;
+}
+
+.project .title{
+	box-sizing: border-box;
+	padding: 1rem 0;
+	width: 100%;
+	font-size: 2rem;
+	line-height: 2rem;
+	border-bottom: 1px solid black;
+}
+
+.project .images{
+	max-height: 10rem;
+}
+
+.project img{
+	display: inline;
+	border-radius: 1rem;
+	height: 10rem;
+	padding: 1rem;
+}
+
+.project .description{
+	padding: 2rem 1rem;
+}
+
+.project .description p{
+	padding: .5rem;
+	font-size: 1.7rem;
+	line-height: 1.7rem;
+}
+
+.project .description .heading{
+	display: inline;
+	font-weight: 500;
+}
+
+.project .description .languages{
+	font-style: italic;
+}

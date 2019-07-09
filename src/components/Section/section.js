@@ -3,6 +3,7 @@ import React from 'react';
 import InfoArticle from '../Article/infoArticle';
 import CollapsibleArticle from '../Article/collapsibleArticle';
 import Experience from '../Objects/experience';
+import Project from '../Objects/project';
 
 function section(props){
 	return (
@@ -57,6 +58,17 @@ function section(props){
 					details="Automated non technical workflows with automation scripts written on top of Google Sheets API. Scripts were to perform operations which were not possible on EXCEL but required a procedural language like Javascript/C. Related to extraction of student data from assessments and performed computations which were used to generate automatic reports for colleges."
 					/>
 
+			</CollapsibleArticle>
+			<CollapsibleArticle heading="Projects">
+					<Project
+						name="Calendar Application"
+						languages="HTML, CSS/SCSS(Preprocessing), React(Javascript)"
+						description="Generates a calendar for the selected month and year. Holidays or special days are shown in red and can be clicked upon to check for details. Holiday list is fetched from calendarific API using the axios library. Optimizations done to avoid redundant API calls to fetch holiday list."
+						todos="Add a backend API in django which stores the notes written for any given date."
+						>
+						<img src="img/calendar1.png" alt="calendar"/>
+						<img src="img/calendar2.png" alt="holiday description"/>
+					</Project>
 			</CollapsibleArticle>
 		</section>
 	)
