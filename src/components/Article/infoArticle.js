@@ -15,8 +15,8 @@ function InfoArticle(props){
 				<p>Also interested in Machine Learning especially supervised machine learning.</p>
 			</div>
 			<div class="links">
-				<p><i class="fab fa-github icon"></i><a href="https://github.com/RohanAntony">Github</a></p>
-				<p><i class="fab fa-linkedin icon"></i><a href="https://www.linkedin.com/in/rohanantony/">LinkedIn</a></p>
+				<p><a href="https://github.com/RohanAntony"><i class="fab fa-github-square icon"></i>Github</a></p>
+				<p><a href="https://www.linkedin.com/in/rohanantony/"><i class="fab fa-linkedin icon"></i>LinkedIn</a></p>
 			</div>
 		</article>
 	)

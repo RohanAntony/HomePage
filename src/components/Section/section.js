@@ -63,6 +63,7 @@ function section(props){
 					<Project
 						name="Calendar Application"
 						languages="HTML, CSS/SCSS(Preprocessing), React(Javascript)"
+						github="https://github.com/RohanAntony/Calendar"
 						description="Generates a calendar for the selected month and year. Holidays or special days are shown in red and can be clicked upon to check for details. Holiday list is fetched from calendarific API using the axios library. Optimizations done to avoid redundant API calls to fetch holiday list."
 						todos="Add a backend API in django which stores the notes written for any given date."
 						>

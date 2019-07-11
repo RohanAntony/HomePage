@@ -5,8 +5,7 @@ $background-gradient: linear-gradient(to bottom right, $primary-color-1, $primar
 html{
 	font-size: 62.5%;
 	line-height: 100%;
-	width: 100%;
-	height: 100%;
+	background-image: $background-gradient;
 }
 
 *{
@@ -15,7 +14,6 @@ html{
 }
 
 body{
-  background-image: $background-gradient;
   display: flex;
   flex-direction: column;
 	overflow-y: scroll;

@@ -21,12 +21,24 @@ function project(props){
 		todos = todos.map(t => <p>{t}.</p>)
 	}
 
+	let github = "#", showGithub = false;
+	if(props.github){
+		github = props.github;
+		showGithub = true;
+	}
 
+	let link = "#", showLink = false;
+	if(props.link){
+		link = props.link;
+		showLink = true;
+	}
 
 	return(
 		<div className="project">
 			<div className="title">
 				<span className="name">{props.name}</span>
+				{showGithub ? <span	className="github"><a href={github}><i class="fab fa-github-square"></i></a></span> : null}
+				{showLink ? <span	className="link"><a href={link}><i class="fas fa-external-link-square-alt"></i></a></span> : null}
 			</div>
 			<div className="images">
 				{props.children}
