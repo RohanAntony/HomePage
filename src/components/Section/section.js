@@ -4,16 +4,29 @@ import InfoArticle from '../Article/infoArticle';
 import CollapsibleArticle from '../Article/collapsibleArticle';
 import Experience from '../Objects/experience';
 import Project from '../Objects/project';
+import Education from '../Objects/education';
 
 function section(props){
 	return (
 		<section class="section">
 			<InfoArticle />
+			<CollapsibleArticle heading="Projects">
+					<Project
+						name="Calendar Application"
+						languages="HTML, CSS/SCSS(Preprocessing), React(Javascript)"
+						github="https://github.com/RohanAntony/Calendar"
+						description="Generates a calendar for the selected month and year. Holidays or special days are shown in red and can be clicked upon to check for details. Holiday list is fetched from calendarific API using the axios library. Optimizations done to avoid redundant API calls to fetch holiday list."
+						todos="Add a backend API in django which stores the notes written for any given date."
+						>
+						<img src="img/calendar1.png" alt="calendar"/>
+						<img src="img/calendar2.png" alt="holiday description"/>
+					</Project>
+			</CollapsibleArticle>
 			<CollapsibleArticle heading="Experience">
 				<Experience
 					company_image=""
 					company_name=""
-					designation="Learning enthusiast, exploring technologies, initiating projects"
+					designation="Learning enthusiastically, exploring technologies, working on projects"
 					from="Mar 2019"
 					to="Present"
 					details="
@@ -59,17 +72,14 @@ function section(props){
 					/>
 
 			</CollapsibleArticle>
-			<CollapsibleArticle heading="Projects">
-					<Project
-						name="Calendar Application"
-						languages="HTML, CSS/SCSS(Preprocessing), React(Javascript)"
-						github="https://github.com/RohanAntony/Calendar"
-						description="Generates a calendar for the selected month and year. Holidays or special days are shown in red and can be clicked upon to check for details. Holiday list is fetched from calendarific API using the axios library. Optimizations done to avoid redundant API calls to fetch holiday list."
-						todos="Add a backend API in django which stores the notes written for any given date."
-						>
-						<img src="img/calendar1.png" alt="calendar"/>
-						<img src="img/calendar2.png" alt="holiday description"/>
-					</Project>
+			<CollapsibleArticle heading="Education">
+				<Education
+					institution_name="Dayananda Sagar College of Engineering"
+					institution_image="img/dsce.png"
+					from="2013"
+					to="2017"
+					standard="Bachelor of Engineering, Computer Science"
+					/>
 			</CollapsibleArticle>
 		</section>
 	)
