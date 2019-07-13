@@ -3,7 +3,7 @@ import React from 'react';
 function education(props){
 	return (
 		<div class="education">
-			<div class="company">
+			<div class="institute">
 				<img src={props.institution_image} alt={props.institution_name} />
 			</div>
 			<div class="content">

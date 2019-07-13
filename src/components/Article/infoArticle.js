@@ -1,13 +1,12 @@
 import React from 'react';
 
-// https://avatars3.githubusercontent.com/u/5779016?s=460&v=4
 function InfoArticle(props){
 	return (
 		<article class="article info">
 			<img src="img/profile.jpg" alt="Profile"/>
 			<div class="about">
 				<p class="name">Rohan Antony</p>
-				<span class="career"><i class="fas fa-circle icon"></i> &nbsp;Actively looking for oppurtunities</span>
+				<span class="career"><i class="fas fa-circle icon"></i> &nbsp;Actively looking for opportunities</span>
 				<hr/>
 				<p>A little bit of that, a little bit of this and somehow everything. </p>
 				<p>Interested in web development, mainly full stack development with React and Django. </p>

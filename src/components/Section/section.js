@@ -5,6 +5,7 @@ import CollapsibleArticle from '../Article/collapsibleArticle';
 import Experience from '../Objects/experience';
 import Project from '../Objects/project';
 import Education from '../Objects/education';
+import Certifications from '../Objects/certifications';
 
 function section(props){
 	return (
@@ -21,6 +22,11 @@ function section(props){
 						<img src="img/calendar1.png" alt="calendar"/>
 						<img src="img/calendar2.png" alt="holiday description"/>
 					</Project>
+			</CollapsibleArticle>
+			<CollapsibleArticle heading="Certifications">
+				<Certifications subject="Web Development">
+					
+				</Certifications>
 			</CollapsibleArticle>
 			<CollapsibleArticle heading="Experience">
 				<Experience
@@ -79,6 +85,7 @@ function section(props){
 					from="2013"
 					to="2017"
 					standard="Bachelor of Engineering, Computer Science"
+
 					/>
 			</CollapsibleArticle>
 		</section>
