@@ -2,7 +2,6 @@
 
 .certifications{
 	font-size: 2rem;
-	display: flex;
 	margin: 1rem 0.8rem 1rem 0;
 
 	.subject{
@@ -16,5 +15,45 @@
 			line-height: 2rem;
 		}
 	}
+}
+
+.certificate{
+	padding-top: 1rem;
+	font-size: 1.8rem;
+	line-height: 2rem;
+	display: flex;
+
+	.site{
+		font-style: italic;
+		flex: 1;
+	}
+
+	.content{
+		flex: 6;
+
+		.link{
+			padding-left: 2rem;
+			display: block;
+
+			a{
+				text-decoration: none;
+				color: black;
+				cursor: pointer;
+			}
+
+			a:hover{
+				color: rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		.description {
+			padding-left: 2rem;
+			font-size: 1.6rem;
+			line-height: 2rem;
+			display: block;
+		}
+
+	}
+
 
 }

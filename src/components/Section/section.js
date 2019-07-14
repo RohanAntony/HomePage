@@ -6,6 +6,7 @@ import Experience from '../Objects/experience';
 import Project from '../Objects/project';
 import Education from '../Objects/education';
 import Certifications from '../Objects/certifications';
+import Certificate from '../Objects/certificate';
 
 function section(props){
 	return (
@@ -25,7 +26,12 @@ function section(props){
 			</CollapsibleArticle>
 			<CollapsibleArticle heading="Certifications">
 				<Certifications subject="Web Development">
-					
+					<Certificate
+						certificate_name="The Web Developer Bootcamp"
+						certificate_loc="https://www.udemy.com/certificate/UC-R5KS5ICN/"
+						site_name="Udemy"
+						description="Learnt about application development using ExpressJS along with MongoDB through server side rendering method."
+						/>
 				</Certifications>
 			</CollapsibleArticle>
 			<CollapsibleArticle heading="Experience">
