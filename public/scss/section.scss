@@ -15,12 +15,13 @@
 
 .info{
 	display: flex;
+
+	img{
+		height: 25rem;
+		border-radius: 1rem;
+	}
 }
 
-.info img{
-	height: 25rem;
-	border-radius: 1rem;
-}
 
 .about p,
 .links p{

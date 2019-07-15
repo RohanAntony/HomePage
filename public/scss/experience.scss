@@ -4,54 +4,57 @@
 	font-size: 2rem;
 	display: flex;
 	margin: 1rem 0.8rem 1rem 0;
-}
 
-.experience .company{
-	padding: 1rem 1rem 1rem 0;
-	width: auto;
-}
+	.company{
+		padding: 1rem 1rem 1rem 0;
+		width: auto;
 
-.experience .company img{
-	height: 10rem;
-	border-radius: 1rem;
-}
+		img{
+			height: 10rem;
+			border-radius: 1rem;
+		}
 
-.experience .company .name{
-	display: block;
-	width: 100%;
-	margin-top: 1rem;
-	font-size: 1.8rem;
-	line-height: 2rem;
-	text-align:center;
-}
+		.name{
+			display: block;
+			width: 100%;
+			margin-top: 1rem;
+			font-size: 1.8rem;
+			line-height: 2rem;
+			text-align:center;
+		}
 
-.experience .content{
-	padding: 1rem;
-	font-size: 1.8rem;
-	line-height: 1.8rem;
-	flex: 1;
-}
+	}
 
-.experience .content .heading{
-	padding: 0.5rem 0;
-	border-bottom: 1px solid black;
-}
+	.content{
+		padding: 1rem;
+		font-size: 1.8rem;
+		line-height: 1.8rem;
+		flex: 1;
 
-.experience .content .designation{
-	display: inline-block;
-}
+		.heading{
+			padding: 0.5rem 0;
+			border-bottom: 1px solid black;
+		}
 
-.experience .content .duration{
-	display: inline-block;
-	padding-left: 1rem;
-	font-size: 1.7rem;
-	font-style: italic;
-}
+		.designation{
+			display: inline-block;
+		}
 
-.experience .content .details{
-	padding: 0.5rem 0;
-}
+		.duration{
+			display: inline-block;
+			padding-left: 1rem;
+			font-size: 1.7rem;
+			font-style: italic;
+		}
 
-.experience .content .detail{
-	padding: .3rem;
+		.details{
+			padding: 0.5rem 0;
+		}
+
+		.detail{
+			padding: .3rem;
+		}
+
+	}
+
 }
