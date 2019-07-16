@@ -16,5 +16,24 @@ html{
 body{
   display: flex;
   flex-direction: column;
-	overflow-y: scroll;
+	overflow-y: visible;
+}
+
+.App{
+	position: relative;
+}
+
+.overlay{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align:center;
+
+	img{
+		transform: translateY(5%);
+		max-height: 90vh;
+	}
 }
