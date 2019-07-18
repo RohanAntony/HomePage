@@ -14,20 +14,40 @@ class App extends Component {
       experience: false,
       education: false,
       showOverlay: false,
-      overlayImg: "img/calendar1.png"
+      overlayImage: "img/calendar1.png"
     }
+  }
+
+  toggleOverlay = (img) => {
+    this.setState(prevState => {
+      if(!prevState.showOverlay)
+        return {
+          showOverlay: true,
+          overlayImage: img
+        }
+      else
+        return {
+          showOverlay: false,
+          overlayImage: ""
+        }
+    })
   }
 
   render(){
     return (
       <div className="App">
-        { this.state.showOverlay ? <Overlay img={this.state.overlayImg}/> : null}
+        {
+          this.state.showOverlay ? 
+          <Overlay img={this.state.overlayImage} toggleOverlay={this.toggleOverlay}/> :
+          null
+        }
         <Nav />
         <Section
           projects={this.state.projects}
           certifications={this.state.certifications}
           experience={this.state.experience}
-          education={this.state.education}/>
+          education={this.state.education}
+          toggleOverlay={this.toggleOverlay}/>
       </div>
     );
   }

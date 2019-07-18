@@ -9,6 +9,7 @@ import Certifications from '../Objects/certifications';
 import Certificate from '../Objects/certificate';
 
 function section(props){
+	console.log(props)
 	return (
 		<section class="section">
 			<InfoArticle />
@@ -19,6 +20,7 @@ function section(props){
 						github="https://github.com/RohanAntony/Calendar"
 						description="Generates a calendar for the selected month and year. Holidays or special days are shown in red and can be clicked upon to check for details. Holiday list is fetched from calendarific API using the axios library. Optimizations done to avoid redundant API calls to fetch holiday list."
 						todos="Add a backend API in django which stores the notes written for any given date."
+						toggleOverlay={props.toggleOverlay}
 						>
 						<img src="img/calendar1.png" alt="calendar"/>
 						<img src="img/calendar2.png" alt="holiday description"/>
@@ -29,8 +31,10 @@ function section(props){
 					<Certificate
 						certificate_name="The Web Developer Bootcamp"
 						certificate_loc="https://www.udemy.com/certificate/UC-R5KS5ICN/"
+						certificate_image="img/WebDevBootcamp.jpg"
 						site_name="Udemy"
-						description="Learnt about application development using ExpressJS along with MongoDB through server side rendering method."
+						description="Implemented a Yelp like application using ExpressJS, MongoDB along with Pug tempalte engine for server side rendering."
+						toggleOverlay={props.toggleOverlay}
 						/>
 				</Certifications>
 			</CollapsibleArticle>
