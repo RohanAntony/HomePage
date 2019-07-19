@@ -22,8 +22,8 @@ function section(props){
 						todos="Add a backend API in django which stores the notes written for any given date."
 						toggleOverlay={props.toggleOverlay}
 						>
-						<img src="img/calendar1.png" alt="calendar"/>
-						<img src="img/calendar2.png" alt="holiday description"/>
+						<img src="img/calendar1.png" alt="calendar" onClick={evt => props.toggleOverlay("img/calendar1.png")}/>
+						<img src="img/calendar2.png" alt="holiday description" onClick={evt => props.toggleOverlay("img/calendar2.png")}/>
 					</Project>
 			</CollapsibleArticle>
 			<CollapsibleArticle heading="Certifications">
