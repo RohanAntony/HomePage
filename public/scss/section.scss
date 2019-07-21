@@ -11,63 +11,76 @@
 	padding: 2rem;
 	border-radius: 1rem;
 	background-color: rgba($navbar-color, 0.25);
+	min-width: 800px;
 }
 
 .info{
 	display: flex;
 
 	img{
-		height: 25rem;
+		height: 25vmin;
 		border-radius: 1rem;
 	}
-}
 
+	.about{
 
-.about p,
-.links p{
-	display: inline-block;
-	padding: 0.5rem 2rem;
-	font-size: 2rem;
-	line-height: 2rem;
-}
+		p{
+			display: inline-block;
+			padding: 0.5rem 2rem;
+			font-size: 2rem;
+			line-height: 2rem;
+		}
 
-.about hr{
-	margin: 2rem 2rem 1rem 2rem;
-}
+		hr{
+			margin: 2rem 2rem 1rem 2rem;
+		}
 
-.about .name{
-	width: 100%;
-	padding: 2rem 2rem;
-	font-size: 2.5rem;
-}
+		.name{
+			width: 100%;
+			padding: 2rem 2rem;
+			font-size: 2.5rem;
+		}
 
-.about .career{
-	padding: 2rem;
-	font-size: 1.5rem;
-	font-weight: bold;
-}
+		.career{
+			padding: 0 2rem;
+			font-size: 1.5rem;
+			font-weight: bold;
+			display: block;
+			line-height: 1.5rem;
 
-.about .career .icon{
-	font-size: 1rem;
-	color: $active-color;
-}
+			.icon{
+				font-size: 1rem;
+				color: $active-color;
+			}
 
-.links {
-	padding: 5rem 1rem 5rem 0.2rem;
-	border-left: 1px solid black;
-}
+		}
 
-.links .icon{
-	display: inline;
-	margin: 1rem;
-}
+	}
 
-.links a{
-	text-decoration: none;
-	color: black;
-}
+	.links{
+		padding: 5rem 1rem 5rem 0.2rem;
+		border-left: 1px solid black;
 
-.links a:hover{
-	color: rgba($navbar-color, 0.5);
-	cursor: pointer;
+		.icon{
+			display: inline;
+			margin: 1rem;
+		}
+
+		p{
+			display: inline-block;
+			padding: 0.5rem 2rem;
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		a:hover{
+			color: rgba($navbar-color, 0.5);
+			cursor: pointer;
+		}
+	}
 }

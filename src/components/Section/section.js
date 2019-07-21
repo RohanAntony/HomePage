@@ -24,6 +24,7 @@ function section(props){
 						>
 						<img src="img/calendar1.png" alt="calendar" onClick={evt => props.toggleOverlay("img/calendar1.png")}/>
 						<img src="img/calendar2.png" alt="holiday description" onClick={evt => props.toggleOverlay("img/calendar2.png")}/>
+						<img src="img/calendar2.png" alt="holiday description" onClick={evt => props.toggleOverlay("img/calendar2.png")}/>
 					</Project>
 			</CollapsibleArticle>
 			<CollapsibleArticle heading="Certifications">
