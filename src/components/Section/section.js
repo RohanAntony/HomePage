@@ -13,7 +13,7 @@ function section(props){
 	return (
 		<section class="section">
 			<InfoArticle />
-			<CollapsibleArticle heading="Projects">
+			<CollapsibleArticle heading="Projects" display_key="projects" display={props.projects} toggleDisplay={props.toggleDisplay}>
 					<Project
 						name="Calendar Application"
 						languages="HTML, CSS/SCSS(Preprocessing), React(Javascript)"
@@ -27,7 +27,7 @@ function section(props){
 						<img src="img/calendar2.png" alt="holiday description" onClick={evt => props.toggleOverlay("img/calendar2.png")}/>
 					</Project>
 			</CollapsibleArticle>
-			<CollapsibleArticle heading="Certifications">
+			<CollapsibleArticle heading="Certifications" display_key="certifications" display={props.certifications} toggleDisplay={props.toggleDisplay}>
 				<Certifications subject="Web Development">
 					<Certificate
 						certificate_name="The Web Developer Bootcamp"
@@ -39,7 +39,7 @@ function section(props){
 						/>
 				</Certifications>
 			</CollapsibleArticle>
-			<CollapsibleArticle heading="Experience">
+			<CollapsibleArticle heading="Experience" display_key="experience" display={props.experience} toggleDisplay={props.toggleDisplay}>
 				<Experience
 					company_image=""
 					company_name=""
@@ -89,7 +89,7 @@ function section(props){
 					/>
 
 			</CollapsibleArticle>
-			<CollapsibleArticle heading="Education">
+			<CollapsibleArticle heading="Education" display_key="education" display={props.education} toggleDisplay={props.toggleDisplay}>
 				<Education
 					institution_name="Dayananda Sagar College of Engineering"
 					institution_image="img/dsce.png"

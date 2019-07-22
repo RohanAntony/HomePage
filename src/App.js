@@ -33,11 +33,21 @@ class App extends Component {
     })
   }
 
+  toggleDisplay = (field) => {
+    this.setState(prevState => {
+      if(!prevState[field])
+        return prevState[field] = true;
+      else
+        return prevState[field] = false;
+    })
+    console.log(field)
+  }
+
   render(){
     return (
       <div className="App">
         {
-          this.state.showOverlay ? 
+          this.state.showOverlay ?
           <Overlay img={this.state.overlayImage} toggleOverlay={this.toggleOverlay}/> :
           null
         }
@@ -47,7 +57,8 @@ class App extends Component {
           certifications={this.state.certifications}
           experience={this.state.experience}
           education={this.state.education}
-          toggleOverlay={this.toggleOverlay}/>
+          toggleOverlay={this.toggleOverlay}
+          toggleDisplay={this.toggleDisplay}/>
       </div>
     );
   }
