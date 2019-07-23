@@ -8,8 +8,8 @@ function collapsibleArticle(props){
 	else
 		displayClass += "content-hidden";
 
-	let downButtonClass = ""
-	let upButtonClass = ""
+	let downButtonClass = "button "
+	let upButtonClass = "button "
 
 	if(props.display)
 		downButtonClass += " hidden"
@@ -26,8 +26,8 @@ function collapsibleArticle(props){
 		<article class="article collapsible">
 			<div class="heading" name={props.heading}>
 				<span>{props.heading}</span>
-				<span class={downButtonClass}><a href={hashTag} onClick={toggleContent}><i class="fas fa-caret-down icon"></i></a></span>
-				<span class={upButtonClass}><a href={hashTag} onClick={toggleContent}><i class="fas fa-caret-up icon"></i></a></span>
+				<span class={downButtonClass} onClick={toggleContent}><i class="fas fa-caret-down icon"></i></span>
+				<span class={upButtonClass} onClick={toggleContent}><i class="fas fa-caret-up icon"></i></span>
 			</div>
 			<div class={displayClass}>
 				{props.children}

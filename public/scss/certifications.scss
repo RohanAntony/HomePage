@@ -29,10 +29,10 @@
 	}
 
 	.content{
-		flex: 6;
+		flex: 7;
+		padding-left: 2rem;
 
 		.link{
-			padding-left: 2rem;
 			display: block;
 
 			a{
@@ -47,7 +47,6 @@
 		}
 
 		.description {
-			padding-left: 2rem;
 			font-size: 1.6rem;
 			line-height: 2rem;
 			display: block;
